@@ -1,6 +1,10 @@
-# CMakeList.txt : CMake project for game-of-life, include source and define
-# project specific logic here.
-#
+## #################################### ##
+## CMakeList.txt : Sources subdirectory ##
+## - Include the raylib package         ##
+## - Add source files using glob        ##
+## - Add all aditional subdirectories   ##
+## #################################### ##
+
 cmake_minimum_required(VERSION 3.8)
 
 # Requires at least version 3.0

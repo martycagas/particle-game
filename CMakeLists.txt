@@ -1,6 +1,10 @@
-# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
-#
+## ######################################################################### ##
+## CMakeList.txt : Top-level CMake project file                              ##
+## - Define project                                                          ##
+## - Define global requirements (build type, standard, compile options, ...) ##
+## - Add the src subdirectory                                                ##
+## ######################################################################### ##
+
 cmake_minimum_required(VERSION 3.8)
 
 project("particle-game" VERSION 0.1)
@@ -23,3 +27,6 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 
 # Add the sources subdirectory
 add_subdirectory(src)
+
+# Add the tests subdirectory
+#add_subdirectory(tests)
