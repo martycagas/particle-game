@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "*.mak": "makefile",
+        "*.tpp": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "memory": "cpp",
+        "system_error": "cpp",
+        "utility": "cpp",
+        "xtr1common": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}
