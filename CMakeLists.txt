@@ -25,8 +25,11 @@ add_compile_options(-Wall)
 set(CMAKE_CXX_FLAGS_DEBUG   "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
 
-# Add the sources subdirectory
-add_subdirectory(src)
+# Add the main project's sources library subdirectory
+add_subdirectory(main)
 
-# Add the tests subdirectory
-#add_subdirectory(tests)
+# Add the "particle game core" library subdirectory
+add_subdirectory(particle_game_core)
+
+# Add the in-house "game essentials" library library subdirectory
+add_subdirectory(game_essentials)
