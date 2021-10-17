@@ -46,8 +46,14 @@
 class Vector2D
 {
 public:
+    /**
+     * @brief   Constant representing the number of axes of this vector.
+     */
     static constexpr std::size_t AXIS_COUNT = 2;
 
+    /**
+     * @brief   Enumeration type for clearly distinguishing the individual axes.
+     */
     enum class AXES
     {
         AXIS_X = 0,
@@ -82,11 +88,16 @@ public:
 
     /**
      * @brief   Identical components contructor.
+     *
+     * @param   new_x_y     Value to which to initialise both axes.
      */
     Vector2D(double new_x_y);
 
     /**
      * @brief   Arbitrary components constructor.
+     *
+     * @param   new_x       Value to which to initialise the X axis.
+     * @param   new_y       Value to which to initialise the Y axis.
      */
     Vector2D(double new_x, double new_y);
 
@@ -202,11 +213,15 @@ public:
 
     /**
      * @brief   Returns the axis with the lower value.
+     *
+     * @return  The axis with the lower value.
      */
     inline int min_axis() const;
 
     /**
      * @brief   Returns the axis with the greater value.
+     *
+     * @return  The axis with the greater value.
      */
     inline int max_axis() const;
 
@@ -217,6 +232,8 @@ public:
 
     /**
      * @brief   Returns a new vector that has values of the normalised original vector.
+     *
+     * @return  New instance of the vector with normalised axes.
      */
     Vector2D normalized() const;
 };
