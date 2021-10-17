@@ -25,5 +25,5 @@ add_executable(${PROJECT_NAME} ${SOURCES_LIST} ${HEADERS_LIST})
 target_include_directories(${PROJECT_NAME} PRIVATE ${RAYLIB_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${RAYLIB_LIBRARIES})
 
-# Link the mathematical vector library
-target_link_libraries(${PROJECT_NAME} LINK_PUBLIC game_essentials)
+# Link the core game logic as a library
+target_link_libraries(${PROJECT_NAME} LINK_PUBLIC particle_game_core)
