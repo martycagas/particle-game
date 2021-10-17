@@ -8,8 +8,8 @@
  * @section DESCRIPTION
  *
  * A part of a particle simulation game, this class represents the game world.
- * 
- * Has following functions:
+ *
+ * A game world has following functions:
  * - Keep the constraints and state of the simulation world.
  * - Keep track of objects in the world.
  */
