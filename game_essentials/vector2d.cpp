@@ -40,199 +40,118 @@
 
 #include "vector2d.hpp"
 
-/*
- * Empty contructor.
- */
 Vector2D::Vector2D() : x(0), y(0) {}
 
-/*
- * Identical components contructor.
- */
 Vector2D::Vector2D(double new_x_y) : x(new_x_y), y(new_x_y) {}
 
-/*
- * Parametrised constructor.
- */
 Vector2D::Vector2D(double new_x, double new_y) : x(new_x), y(new_y) {}
 
-/*
- * Default deconstructor.
- */
 Vector2D::~Vector2D() = default;
 
-/*
- * The subscript operator.
- */
 inline double &Vector2D::operator[](int index) { return (index == 0) ? x : y; }
 
-/*
- * The constant subscript operator.
- */
 inline const double &Vector2D::operator[](int index) const { return (index == 0) ? x : y; }
 
-/*
- * The addition operator.
- */
 inline Vector2D Vector2D::operator+(const Vector2D &rvalue) const
 {
     return Vector2D(x + rvalue.x, y + rvalue.y);
 }
 
-/*
- * The addition assignment operator.
- */
 inline void Vector2D::operator+=(const Vector2D &rvalue)
 {
     x += rvalue.x;
     y += rvalue.y;
 }
 
-/*
- * The subtraction operator.
- */
 inline Vector2D Vector2D::operator-(const Vector2D &rvalue) const
 {
     return Vector2D(x - rvalue.x, y - rvalue.y);
 }
 
-/*
- * The subtraction assignment operator.
- */
 inline void Vector2D::operator-=(const Vector2D &rvalue)
 {
     x -= rvalue.x;
     y -= rvalue.y;
 }
 
-/*
- * The vector multiplication operator.
- */
 inline Vector2D Vector2D::operator*(const Vector2D &rvalue) const
 {
     return Vector2D(x * rvalue.x, y * rvalue.y);
 }
 
-/*
- * The scalar multiplication operator.
- */
 inline Vector2D Vector2D::operator*(const double &rvalue) const
 {
     return Vector2D(x * rvalue, y * rvalue);
 }
 
-/*
- * The vector multiplication assignment operator.
- */
 inline void Vector2D::operator*=(const Vector2D &rvalue)
 {
     x *= rvalue.x;
     y *= rvalue.y;
 }
 
-/*
- * The scalar multiplication assignment operator.
- */
 inline void Vector2D::operator*=(const double &rvalue)
 {
     x *= rvalue;
     y *= rvalue;
 }
 
-/*
- * The vector division operator.
- */
 inline Vector2D Vector2D::operator/(const Vector2D &rvalue) const
 {
     return Vector2D(x / rvalue.x, y / rvalue.y);
 }
 
-/*
- * The scalar division operator.
- */
 inline Vector2D Vector2D::operator/(const double &rvalue) const
 {
     return Vector2D(x / rvalue, y / rvalue);
 }
 
-/*
- * The vector division assignment operator.
- */
 inline void Vector2D::operator/=(const Vector2D &rvalue)
 {
     x *= rvalue.x;
     y *= rvalue.y;
 }
 
-/*
- * The scalar division assignment operator.
- */
 inline void Vector2D::operator/=(const double &rvalue)
 {
     x *= rvalue;
     y *= rvalue;
 }
 
-/*
- * The unary negation operator.
- */
 inline Vector2D Vector2D::operator-() const { return Vector2D(-x, -y); }
 
-/*
- * The "equal to" operator.
- */
 inline bool Vector2D::operator==(const Vector2D &rvalue) const
 {
     return (x == rvalue.x && y == rvalue.y);
 }
 
-/*
- * The "not equal to" operator.
- */
 inline bool Vector2D::operator!=(const Vector2D &rvalue) const
 {
     return (x != rvalue.x || y != rvalue.y);
 }
 
-/*
- * The "less than" operator.
- */
 inline bool Vector2D::operator<(const Vector2D &rvalue) const
 {
     return x == rvalue.x ? (y < rvalue.y) : (x < rvalue.x);
 }
 
-/*
- * The "greater than" operator.
- */
 inline bool Vector2D::operator>(const Vector2D &rvalue) const
 {
     return x == rvalue.x ? (y > rvalue.y) : (x > rvalue.x);
 }
 
-/*
- * The "less or equal than" operator.
- */
 inline bool Vector2D::operator<=(const Vector2D &rvalue) const
 {
     return x == rvalue.x ? (y <= rvalue.y) : (x < rvalue.x);
 }
 
-/*
- * The "greater or equal than" operator.
- */
 inline bool Vector2D::operator>=(const Vector2D &rvalue) const
 {
     return x == rvalue.x ? (y >= rvalue.y) : (x > rvalue.x);
 }
 
-/*
- * Returns the axis with the lower value.
- */
 inline int Vector2D::min_axis() const { return x < y ? 0 : 1; }
 
-/*
- * Returns the axis with the greater value.
- */
 inline int Vector2D::max_axis() const { return x < y ? 1 : 0; }
 
 double Vector2D::length() const { return std::sqrt(x * x + y * y); }
@@ -268,9 +187,6 @@ inline Vector2D Vector2D::direction_to(const Point2D &other_point) const
     return ret;
 }
 
-/*
- * Normalises the vector in-place.
- */
 void Vector2D::normalize()
 {
     double l = x * x + y * y;
@@ -281,9 +197,6 @@ void Vector2D::normalize()
     }
 }
 
-/*
- * Returns a new vector that has values of the normalised original vector.
- */
 Vector2D Vector2D::normalized() const
 {
     Vector2D v = *this;
