@@ -235,6 +235,39 @@ inline int Vector2D::min_axis() const { return x < y ? 0 : 1; }
  */
 inline int Vector2D::max_axis() const { return x < y ? 1 : 0; }
 
+double Vector2D::length() const { return std::sqrt(x * x + y * y); }
+
+double Vector2D::length_squared() const { return (x * x + y * y); }
+
+double Vector2D::dot(const Vector2D &other_vector) const
+{
+    return x * other_vector.x + y * other_vector.y;
+}
+
+double Vector2D::cross(const Vector2D &other_vector) const
+{
+    return x * other_vector.y - y * other_vector.x;
+}
+
+double Vector2D::angle() const { return std::atan2(y, x); }
+
+double Vector2D::angle_formed_by(const Vector2D &other_vector) const
+{
+    return std::atan2(cross(other_vector), dot(other_vector));
+}
+
+double Vector2D::angle_to_point(const Point2D &other_point) const
+{
+    return (*this - other_point).angle();
+}
+
+inline Vector2D Vector2D::direction_to(const Point2D &other_point) const
+{
+    Vector2D ret(other_point.x - x, other_point.y - y);
+    ret.normalize();
+    return ret;
+}
+
 /*
  * Normalises the vector in-place.
  */

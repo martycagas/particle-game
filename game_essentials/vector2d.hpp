@@ -226,6 +226,76 @@ public:
     inline int max_axis() const;
 
     /**
+     * @brief   Returns the length of this vector.
+     *
+     * @return  The length.
+     */
+    double length() const;
+
+    /**
+     * @brief   Returns the length of this vector, squared.
+     *
+     * @return  The length.
+     */
+    double length_squared() const;
+
+    /**
+     * @brief   Returns the dot product between this vector and other_vector.
+     *
+     * @param   other_vector    The second vector used to calculate the dot product.
+     *
+     * @return  Dot product.
+     */
+    double dot(const Vector2D &other_vector) const;
+
+    /**
+     * @brief   Returns the cross product between this vector and other_vector.
+     *
+     * @param   other_vector    The second vector used to calculate the cross product.
+     *
+     * @return  Cross product.
+     */
+    double cross(const Vector2D &other_vector) const;
+
+    /**
+     * @brief   Returns this vector's angle with respect to the positive X axis, or [1; 0] vector,
+     * in radians.
+     *
+     * @return  Angle in radians.
+     */
+    double angle() const;
+
+    /**
+     * @brief   Returns the angle in radians formed by two rays defined by this vector and the
+     * other_vector.
+     *
+     * @param   other_vector    Vector used to construct the second ray.
+     *
+     * @return  Angle in radians.
+     */
+    double angle_formed_by(const Vector2D &other_vector) const;
+
+    /**
+     * @brief   Returns the angle in radians between the line connecting the two points and the X
+     * axis.
+     *
+     * @param   other_point     The second point used to construct the line.
+     *
+     * @return  Angle in radians.
+     */
+    double angle_to_point(const Point2D &other_point) const;
+
+    /**
+     * @brief   Returns the normalised vector pointing from this point (a) to the other point (b).
+     * This is equivalent to using (b - a).normalized().
+     *
+     * @param   other_point     The second point used in determining the direction.
+     *
+     * @return  Returns the normalised vector that is the direction to the other_point.
+     */
+    inline Vector2D direction_to(const Point2D &other_point) const;
+
+    /**
      * @brief   Normalises the vector in-place.
      */
     void normalize();
