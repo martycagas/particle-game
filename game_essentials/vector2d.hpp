@@ -1,9 +1,9 @@
 /**
- * @file    math_vector.hpp
+ * @file    vector2d.hpp
  * @author  Martin Cagas
  * @date    2021-10-03
- *
- * @brief   An mathematical 2D vector.
+
+ * An mathematical 2D vector.
  *
  * @section DESCRIPTION
  *
