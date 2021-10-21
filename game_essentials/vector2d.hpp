@@ -61,7 +61,7 @@ public:
     };
 
     /**
-     * @brief   A set of anonymous unions and structures that hold the value data.
+     * @brief   A set of anonymous unions and structures that hold the vector data.
      */
     union
     {
