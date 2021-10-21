@@ -62,6 +62,8 @@ public:
 
     /**
      * @brief   A set of anonymous unions and structures that hold the vector data.
+     *
+     * Initialised to [0; 0].
      */
     union
     {
@@ -82,7 +84,7 @@ public:
     };
 
     /**
-     * @brief   Empty contructor.
+     * @brief   Empty contructor. Creates a [0; 0] vector.
      */
     Vector2D();
 
