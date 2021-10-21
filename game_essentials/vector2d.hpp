@@ -69,16 +69,16 @@ public:
         {
             union
             {
-                double x;
-                double width;
+                double x;      ///< The X component. Alternate name for width.
+                double width;  ///< The width component. Alternate name for X.
             };
             union
             {
-                double y;
-                double height;
+                double y;       ///< The Y component. Alternate name for height.
+                double height;  ///< The height component. Alternate name for Y.
             };
         };
-        double coord[2] = {0};
+        double coord[2] = {0};  ///< Both components as an array.
     };
 
     /**
