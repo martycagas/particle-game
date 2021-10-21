@@ -86,7 +86,7 @@ public:
     /**
      * @brief   Empty contructor. Creates a [0; 0] vector.
      */
-    Vector2D();
+    Vector2D(void);
 
     /**
      * @brief   Identical components contructor.
@@ -181,7 +181,7 @@ public:
     /**
      * @brief   The unary negation operator.
      */
-    inline Vector2D operator-() const;
+    inline Vector2D operator-(void) const;
 
     /**
      * @brief   The "equal to" operator.
@@ -218,28 +218,28 @@ public:
      *
      * @return  The axis with the lower value.
      */
-    inline int min_axis() const;
+    inline int min_axis(void) const;
 
     /**
      * @brief   Returns the axis with the greater value.
      *
      * @return  The axis with the greater value.
      */
-    inline int max_axis() const;
+    inline int max_axis(void) const;
 
     /**
      * @brief   Returns the length of this vector.
      *
      * @return  The length.
      */
-    double length() const;
+    double length(void) const;
 
     /**
      * @brief   Returns the length of this vector, squared.
      *
      * @return  The length.
      */
-    double length_squared() const;
+    double length_squared(void) const;
 
     /**
      * @brief   Returns the dot product between this vector and other_vector.
@@ -265,7 +265,7 @@ public:
      *
      * @return  Angle in radians.
      */
-    double angle() const;
+    double angle(void) const;
 
     /**
      * @brief   Returns the angle in radians formed by two rays defined by this vector and the
@@ -300,14 +300,14 @@ public:
     /**
      * @brief   Normalises the vector in-place.
      */
-    void normalize();
+    void normalize(void);
 
     /**
      * @brief   Returns a new vector that has values of the normalised original vector.
      *
      * @return  New instance of the vector with normalised axes.
      */
-    Vector2D normalized() const;
+    Vector2D normalized(void) const;
 };
 
 /**

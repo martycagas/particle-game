@@ -40,7 +40,7 @@
 
 #include "vector2d.hpp"
 
-Vector2D::Vector2D() : x(0), y(0) {}
+Vector2D::Vector2D(void) : x(0), y(0) {}
 
 Vector2D::Vector2D(double new_x_y) : x(new_x_y), y(new_x_y) {}
 
@@ -118,7 +118,7 @@ inline void Vector2D::operator/=(const double &rvalue)
     y *= rvalue;
 }
 
-inline Vector2D Vector2D::operator-() const { return Vector2D(-x, -y); }
+inline Vector2D Vector2D::operator-(void) const { return Vector2D(-x, -y); }
 
 inline bool Vector2D::operator==(const Vector2D &rvalue) const
 {
@@ -150,13 +150,13 @@ inline bool Vector2D::operator>=(const Vector2D &rvalue) const
     return x == rvalue.x ? (y >= rvalue.y) : (x > rvalue.x);
 }
 
-inline int Vector2D::min_axis() const { return x < y ? 0 : 1; }
+inline int Vector2D::min_axis(void) const { return x < y ? 0 : 1; }
 
-inline int Vector2D::max_axis() const { return x < y ? 1 : 0; }
+inline int Vector2D::max_axis(void) const { return x < y ? 1 : 0; }
 
-double Vector2D::length() const { return std::sqrt(x * x + y * y); }
+double Vector2D::length(void) const { return std::sqrt(x * x + y * y); }
 
-double Vector2D::length_squared() const { return (x * x + y * y); }
+double Vector2D::length_squared(void) const { return (x * x + y * y); }
 
 double Vector2D::dot(const Vector2D &other_vector) const
 {
@@ -168,7 +168,7 @@ double Vector2D::cross(const Vector2D &other_vector) const
     return x * other_vector.y - y * other_vector.x;
 }
 
-double Vector2D::angle() const { return std::atan2(y, x); }
+double Vector2D::angle(void) const { return std::atan2(y, x); }
 
 double Vector2D::angle_formed_by(const Vector2D &other_vector) const
 {
@@ -187,7 +187,7 @@ inline Vector2D Vector2D::direction_to(const Point2D &other_point) const
     return ret;
 }
 
-void Vector2D::normalize()
+void Vector2D::normalize(void)
 {
     double l = x * x + y * y;
     if (l != 0) {
@@ -197,7 +197,7 @@ void Vector2D::normalize()
     }
 }
 
-Vector2D Vector2D::normalized() const
+Vector2D Vector2D::normalized(void) const
 {
     Vector2D v = *this;
     v.normalize();
