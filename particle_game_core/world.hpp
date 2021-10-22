@@ -45,13 +45,13 @@ public:
     /**
      * @brief   particle_limit setter.
      */
-    void SetParticleLimit(std::size_t new_particle_limit) { particle_limit = new_particle_limit; }
+    void set_particle_limit(std::size_t new_particle_limit);
 
     /**
      * @brief   particle_limit getter.
      */
-    std::size_t GetParticleLimit() { return particle_limit; }
+    std::size_t get_particle_limit();
 
 private:
-    std::size_t particle_limit;  ///< The maximum amount of particles allowed at one time.
+    std::size_t particle_limit_;  ///< The maximum amount of particles allowed at one time.
 };
