@@ -15,3 +15,14 @@
  */
 
 #include "world.hpp"
+
+World::World(void) : particle_limit_(1000) {}
+
+World::~World() = default;
+
+void World::set_particle_limit(std::size_t new_particle_limit)
+{
+    particle_limit_ = new_particle_limit;
+}
+
+std::size_t World::get_particle_limit() { return particle_limit_; }

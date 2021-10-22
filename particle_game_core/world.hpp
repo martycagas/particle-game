@@ -25,7 +25,8 @@
 class World
 {
 public:
-    enum class Directions {
+    enum class Directions
+    {
         DIRECTION_TOP = 0,
         DIRECTION_BOTTOM,
         DIRECTION_LEFT,
@@ -35,15 +36,15 @@ public:
     /**
      * @brief   Contructor.
      */
-    World();
+    World(void);
 
     /**
-     * @brief   Deconstructor.
+     * @brief   Default deconstructor.
      */
     ~World();
 
     /**
-     * @brief   particle_limit setter.
+     * @brief   particle_limit_ setter.
      */
     void set_particle_limit(std::size_t new_particle_limit);
 
