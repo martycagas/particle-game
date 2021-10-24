@@ -29,7 +29,8 @@ public:
     /**
      * @brief   Contructor.
      *
-     * @param   new_mass   Gravitational force of the object.
+     * @param   initial_position    Initial position in the 2D space.
+     * @param   initial_mass        Initial mass of the object.
      */
     PhysicsObject(Point2D initial_position, double initial_mass);
 
