@@ -10,6 +10,7 @@ cmake_minimum_required(VERSION 3.8)
 set(SOURCES_LIST
     emitter.cpp
     particle.cpp
+    physics_object.cpp
     world.cpp
 )
 
