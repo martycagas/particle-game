@@ -35,3 +35,10 @@ Point2D PhysicsObject::get_velocity(void) const { return velocity_; }
 void PhysicsObject::set_mass(double new_mass) { mass_ = new_mass; }
 
 double PhysicsObject::get_mass(void) const { return mass_; }
+
+void PhysicsObject::integrate_forces(std::vector<Vector2D> forces)
+{
+    for (Vector2D force : forces) {
+        velocity_ += force;
+    }
+}

@@ -19,6 +19,7 @@
 
 // Standard includes
 #include <cstdlib>
+#include <vector>
 
 // "Game essentials" library includes
 #include <vector2d.hpp>
@@ -68,6 +69,13 @@ public:
      * @brief   mass_ getter.
      */
     double get_mass(void) const;
+
+    /**
+     * @brief   Iterates over a list of vectors of forces and sums them up with the velocity.
+     *
+     * @param   forces          The list of forces to integrate.
+     */
+    void integrate_forces(std::vector<Vector2D> forces);
 
 protected:
     Point2D position_;   ///< Position in the game world's 2D space.
