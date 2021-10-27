@@ -10,32 +10,54 @@
  * A part of a particle simulation game, this a base class for all particles in the system.
  *
  * A particle needs to implement following features:
- * - Define the particle's type and features.
- * - Implement a way of drawing said particle.
- * - Keep track and update particle's speed and position.
- * - Handle interactions with other particles in the game world.
+ * - Define the particle's type and features
+ * - Implement a way of drawing said particle
  */
 
 #pragma once
 
+// Standard includes
 #include <cstdlib>
+#include <vector>
+
+// vcpkg includes
+#include <raylib.h>
+
+// "Game essentials" library includes
+#include <vector2d.hpp>
+
+// Local includes
+#include "physics_object.hpp"
 
 /**
  * @brief   Class representing a particle in the game world.
  */
-class Particle
+class Particle : PhysicsObject
 {
 public:
     /**
      * @brief   Contructor.
+     *
+     * There is no reason to attempt to initialise anything in the contructor for now, because this
+     * object will be pooled. That means creating a large amount of instances ahead of the time and
+     * reusing them as needed.
      */
-    Particle();
+    Particle(void);
 
     /**
      * @brief   Deconstructor.
      */
     ~Particle();
 
+    /**
+     * @brief   Sets a new state to the particle.
+     */
+    void setup(Point2D new_position, Vector2D new_velocity);
+
+    /**
+     * @brief   Draws the particle on screen.
+     */
+    void draw(void) const;
+
 private:
-    
 };
