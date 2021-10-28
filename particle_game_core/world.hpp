@@ -39,11 +39,6 @@ public:
     World(void);
 
     /**
-     * @brief   Default deconstructor.
-     */
-    ~World();
-
-    /**
      * @brief   particle_limit_ setter.
      */
     void set_particle_limit(std::size_t new_particle_limit);

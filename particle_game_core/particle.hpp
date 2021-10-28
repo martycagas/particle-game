@@ -45,11 +45,6 @@ public:
     Particle(void);
 
     /**
-     * @brief   Deconstructor.
-     */
-    ~Particle();
-
-    /**
      * @brief   Sets a new state to the particle.
      */
     void setup(Point2D new_position, Vector2D new_velocity);

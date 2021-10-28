@@ -22,8 +22,6 @@ PhysicsObject::PhysicsObject(Point2D initial_position, double initial_mass)
 {
 }
 
-PhysicsObject::~PhysicsObject() = default;
-
 void PhysicsObject::set_position(Point2D new_position) { position_ = new_position; }
 
 Point2D PhysicsObject::get_position(void) const { return position_; }

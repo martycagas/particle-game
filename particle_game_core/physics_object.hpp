@@ -36,11 +36,6 @@ public:
     PhysicsObject(Point2D initial_position, double initial_mass);
 
     /**
-     * @brief   Default deconstructor.
-     */
-    ~PhysicsObject();
-
-    /**
      * @brief   position_ setter.
      */
     void set_position(Point2D new_position);
