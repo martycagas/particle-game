@@ -104,11 +104,6 @@ public:
     Vector2D(double new_x, double new_y);
 
     /**
-     * @brief   Default deconstructor.
-     */
-    ~Vector2D();
-
-    /**
      * @brief   The subscript operator.
      */
     inline double &operator[](int index);
