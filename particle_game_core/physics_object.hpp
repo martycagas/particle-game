@@ -28,7 +28,16 @@ class PhysicsObject
 {
 public:
     /**
+     * @brief   Empty (zero) contructor.
+     *
+     * Used in general for particles.
+     */
+    PhysicsObject(void);
+
+    /**
      * @brief   Contructor.
+     *
+     * Used in general for gravity sources, emitters and other more permanent objects.
      *
      * @param   initial_position    Initial position in the 2D space.
      * @param   initial_mass        Initial mass of the object.
