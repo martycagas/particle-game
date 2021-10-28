@@ -89,13 +89,6 @@ public:
     Vector2D(void);
 
     /**
-     * @brief   Identical components contructor.
-     *
-     * @param   new_x_y     Value to which to initialise both axes.
-     */
-    Vector2D(double new_x_y);
-
-    /**
      * @brief   Arbitrary components constructor.
      *
      * @param   new_x       Value to which to initialise the X axis.

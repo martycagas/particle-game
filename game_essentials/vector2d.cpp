@@ -42,8 +42,6 @@
 
 Vector2D::Vector2D(void) : x(0), y(0) {}
 
-Vector2D::Vector2D(double new_x_y) : x(new_x_y), y(new_x_y) {}
-
 Vector2D::Vector2D(double new_x, double new_y) : x(new_x), y(new_y) {}
 
 inline double &Vector2D::operator[](int index) { return (index == 0) ? x : y; }
