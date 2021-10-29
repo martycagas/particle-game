@@ -12,6 +12,7 @@ find_package(raylib 3.0 CONFIG REQUIRED)
 # Manually specify all.cpp sources in this directory
 set(SOURCES_LIST
     emitter.cpp
+    gravity_object.cpp
     particle.cpp
     physics_object.cpp
     world.cpp
