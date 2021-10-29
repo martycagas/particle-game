@@ -262,6 +262,15 @@ public:
     double angle_to_point(const Point2D &other_point) const;
 
     /**
+     * @brief   Returns the distance to another point.
+     *
+     * @param   other_point     The second point used to calculate distance.
+     *
+     * @return  Returns the distance.
+     */
+    double distance_to(const Point2D &other_point) const;
+
+    /**
      * @brief   Returns the normalised vector pointing from this point (a) to the other point (b).
      * This is equivalent to using (b - a).normalized().
      *
@@ -270,15 +279,6 @@ public:
      * @return  Returns the normalised vector that is the direction to the other_point.
      */
     inline Vector2D direction_to(const Point2D &other_point) const;
-
-    /**
-     * @brief   Returns the distance to another point.
-     *
-     * @param   other_point     The second point used to calculate distance.
-     *
-     * @return  Returns the distance.
-     */
-    double distance_to(const Point2D &other_point) const;
 
     /**
      * @brief   Normalises the vector in-place.
