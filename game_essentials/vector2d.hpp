@@ -278,7 +278,7 @@ public:
      *
      * @return  Returns the normalised vector that is the direction to the other_point.
      */
-    inline Vector2D direction_to(const Point2D &other_point) const;
+    Vector2D direction_to(const Point2D &other_point) const;
 
     /**
      * @brief   Normalises the vector in-place.

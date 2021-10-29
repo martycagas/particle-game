@@ -182,7 +182,7 @@ double Vector2D::distance_to(const Point2D &other_point) const
     return ret.length();
 }
 
-inline Vector2D Vector2D::direction_to(const Point2D &other_point) const
+Vector2D Vector2D::direction_to(const Point2D &other_point) const
 {
     Vector2D ret(other_point.x - x, other_point.y - y);
     ret.normalize();
