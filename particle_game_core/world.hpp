@@ -25,14 +25,6 @@
 class World
 {
 public:
-    enum class Directions
-    {
-        DIRECTION_TOP = 0,
-        DIRECTION_BOTTOM,
-        DIRECTION_LEFT,
-        DIRECTION_RIGHT
-    };
-
     /**
      * @brief   Contructor.
      */
