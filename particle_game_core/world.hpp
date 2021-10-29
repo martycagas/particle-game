@@ -40,6 +40,6 @@ public:
      */
     std::size_t get_particle_limit();
 
-private:
+protected:
     std::size_t particle_limit_;  ///< The maximum amount of particles allowed at one time.
 };
