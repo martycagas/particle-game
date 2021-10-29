@@ -286,6 +286,15 @@ public:
     inline Vector2D direction_to(const Point2D &other_point) const;
 
     /**
+     * @brief   Returns the distance to another point.
+     *
+     * @param   other_point     The second point used to calculate distance.
+     *
+     * @return  Returns the distance.
+     */
+    double distance_to(const Point2D &other_point) const;
+
+    /**
      * @brief   Normalises the vector in-place.
      */
     void normalize(void);
