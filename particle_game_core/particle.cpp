@@ -16,7 +16,7 @@
 
 #include "particle.hpp"
 
-Particle::Particle(void) : PhysicsObject(Point2D(0), 0) {}
+Particle::Particle(void) : PhysicsObject() {}
 
 void Particle::setup(Point2D new_position, Vector2D new_velocity)
 {
