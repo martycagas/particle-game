@@ -47,20 +47,6 @@ class Vector2D
 {
 public:
     /**
-     * @brief   Constant representing the number of axes of this vector.
-     */
-    static constexpr std::size_t AXIS_COUNT = 2;
-
-    /**
-     * @brief   Enumeration type for clearly distinguishing the individual axes.
-     */
-    enum class AXES
-    {
-        AXIS_X = 0,
-        AXIS_Y
-    };
-
-    /**
      * @brief   A set of anonymous unions and structures that hold the vector data.
      *
      * Initialised to [0; 0].
