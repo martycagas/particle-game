@@ -21,7 +21,7 @@ void GravityObject::disable(void) { is_enabled_ = false; }
 
 bool GravityObject::get_is_enabled(void) { return is_enabled_; }
 
-Vector2D GravityObject::calculate_force(PhysicsObject &to_object) const
+Vector2D GravityObject::calculate_force(const PhysicsObject &to_object) const
 {
     if (!is_enabled_) {
         return Vector2D(0, 0);
