@@ -21,7 +21,6 @@
 #include <vector2d.hpp>
 
 // Local includes
-#include "physics_object.hpp"
 #include "gravity_object.hpp"
 
 class GravityConstant : GravityObject
