@@ -43,9 +43,8 @@
 #include <cmath>
 #include <cstdlib>
 
-class Vector2D
+struct Vector2D
 {
-public:
     /**
      * @brief   A set of anonymous unions and structures that hold the vector data.
      *
