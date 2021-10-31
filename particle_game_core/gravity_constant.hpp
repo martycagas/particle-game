@@ -23,7 +23,7 @@
 // Local includes
 #include "gravity_object.hpp"
 
-class GravityConstant : GravityObject
+class GravityConstant : public GravityObject
 {
 public:
     /**
@@ -63,7 +63,7 @@ public:
      *
      * @return  Vector2D representing the gravitational force.
      */
-    Vector2D calculate_force(const ::PhysicsObject &to_object) const;
+    Vector2D calculate_force(const PhysicsObject &to_object) const;
 
 protected:
     double gravity_angle_;     ///< Direction of the gravity in radians. 0 means straight down.

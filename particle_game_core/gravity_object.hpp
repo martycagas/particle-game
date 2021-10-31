@@ -22,7 +22,7 @@
 // Local includes
 #include "physics_object.hpp"
 
-class GravityObject : PhysicsObject
+class GravityObject : public PhysicsObject
 {
 public:
     /**
