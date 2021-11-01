@@ -1,7 +1,6 @@
 /**
  * @file    gravity_object.cpp
  * @author  Martin Cagas
- * @date    2021-10-17
  *
  * @brief   Class representing a "source" of gravity in the game world.
  *

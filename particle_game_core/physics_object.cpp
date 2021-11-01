@@ -1,7 +1,6 @@
 /**
  * @file    physics_object.hpp
  * @author  Martin Cagas
- * @date    2021-10-23
  *
  * @brief   Base class for representing any physics object in the game world.
  *

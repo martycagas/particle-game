@@ -1,7 +1,6 @@
 /**
  * @file    gravity_constant.hpp
  * @author  Martin Cagas
- * @date    2021-10-29
  *
  * @brief   Class representing a constant gravitational force in the game world.
  *

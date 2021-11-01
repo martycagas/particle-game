@@ -1,7 +1,6 @@
 /**
  * @file    particle.hpp
  * @author  Martin Cagas
- * @date    2021-10-01
  *
  * @brief   Class representing a particle in the game world.
  *

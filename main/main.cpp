@@ -1,7 +1,6 @@
 /**
  * @file    main.cpp
  * @author  Martin Cagas
- * @date    2021-09-29
  *
  * @brief   Physics-based particle game.
  *
