@@ -30,8 +30,9 @@ void GravityConstant::set_gravity_strength(double new_gravity_strength)
 
 double GravityConstant::get_gravity_strength(void) const { return gravity_strength_; }
 
-Vector2D GravityConstant::calculate_force(const ::PhysicsObject &to_object) const
+Vector2D GravityConstant::calculate_force(const PhysicsObject &to_object) const
 {
-    Vector2D ret = Vector2D(0, 1);
+    Vector2D ret = Vector2D();
+    ret.set_from_angle(gravity_angle_);
     return ret * gravity_strength_;
 }
