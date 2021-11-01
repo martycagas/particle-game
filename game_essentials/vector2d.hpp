@@ -215,6 +215,26 @@ struct Vector2D
     double length_squared(void) const;
 
     /**
+     * @brief   Returns this vector's angle with respect to the positive X axis, or [1; 0] vector,
+     * in radians.
+     *
+     * @return  Angle in radians.
+     */
+    double angle(void) const;
+
+    /**
+     * @brief   Normalises the vector in-place.
+     */
+    void normalize(void);
+
+    /**
+     * @brief   Returns a new vector that has values of the normalised original vector.
+     *
+     * @return  New instance of the vector with normalised axes.
+     */
+    Vector2D normalized(void) const;
+
+    /**
      * @brief   Returns the dot product between this vector and other_vector.
      *
      * @param   other_vector    The second vector used to calculate the dot product.
@@ -231,14 +251,6 @@ struct Vector2D
      * @return  Cross product.
      */
     double cross(const Vector2D &other_vector) const;
-
-    /**
-     * @brief   Returns this vector's angle with respect to the positive X axis, or [1; 0] vector,
-     * in radians.
-     *
-     * @return  Angle in radians.
-     */
-    double angle(void) const;
 
     /**
      * @brief   Returns the angle in radians formed by two rays defined by this vector and the
@@ -278,18 +290,6 @@ struct Vector2D
      * @return  Returns the normalised vector that is the direction to the other_point.
      */
     Vector2D direction_to(const Point2D &other_point) const;
-
-    /**
-     * @brief   Normalises the vector in-place.
-     */
-    void normalize(void);
-
-    /**
-     * @brief   Returns a new vector that has values of the normalised original vector.
-     *
-     * @return  New instance of the vector with normalised axes.
-     */
-    Vector2D normalized(void) const;
 };
 
 /**

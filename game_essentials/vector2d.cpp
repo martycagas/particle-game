@@ -154,6 +154,25 @@ double Vector2D::length(void) const { return std::sqrt(x * x + y * y); }
 
 double Vector2D::length_squared(void) const { return (x * x + y * y); }
 
+double Vector2D::angle(void) const { return std::atan2(y, x); }
+
+void Vector2D::normalize(void)
+{
+    double l = x * x + y * y;
+    if (l != 0) {
+        l = std::sqrt(l);
+        x /= l;
+        y /= l;
+    }
+}
+
+Vector2D Vector2D::normalized(void) const
+{
+    Vector2D v = *this;
+    v.normalize();
+    return v;
+}
+
 double Vector2D::dot(const Vector2D &other_vector) const
 {
     return x * other_vector.x + y * other_vector.y;
@@ -163,8 +182,6 @@ double Vector2D::cross(const Vector2D &other_vector) const
 {
     return x * other_vector.y - y * other_vector.x;
 }
-
-double Vector2D::angle(void) const { return std::atan2(y, x); }
 
 double Vector2D::angle_formed_by(const Vector2D &other_vector) const
 {
@@ -187,21 +204,4 @@ Vector2D Vector2D::direction_to(const Point2D &other_point) const
     Vector2D ret(other_point.x - x, other_point.y - y);
     ret.normalize();
     return ret;
-}
-
-void Vector2D::normalize(void)
-{
-    double l = x * x + y * y;
-    if (l != 0) {
-        l = std::sqrt(l);
-        x /= l;
-        y /= l;
-    }
-}
-
-Vector2D Vector2D::normalized(void) const
-{
-    Vector2D v = *this;
-    v.normalize();
-    return v;
 }
