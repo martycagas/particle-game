@@ -2,7 +2,7 @@
  * @file    vector2d.hpp
  * @author  Martin Cagas
  * @date    2021-10-03
-
+ *
  * An mathematical 2D vector.
  *
  * @section DESCRIPTION

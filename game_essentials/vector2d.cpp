@@ -2,7 +2,7 @@
  * @file    vector2d.cpp
  * @author  Martin Cagas
  * @date    2021-10-03
-
+ *
  * An mathematical 2D vector.
  *
  * @section DESCRIPTION
@@ -146,7 +146,7 @@ inline bool Vector2D::operator>=(const Vector2D &rvalue) const
     return x == rvalue.x ? (y >= rvalue.y) : (x > rvalue.x);
 }
 
-inline void  Vector2D::set_all(double new_x_y) { x = y = new_x_y; }
+inline void Vector2D::set_all(double new_x_y) { x = y = new_x_y; }
 
 void Vector2D::set_from_angle(double angle)
 {
