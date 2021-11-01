@@ -146,6 +146,14 @@ inline bool Vector2D::operator>=(const Vector2D &rvalue) const
     return x == rvalue.x ? (y >= rvalue.y) : (x > rvalue.x);
 }
 
+inline void  Vector2D::set_all(double new_x_y) { x = y = new_x_y; }
+
+void Vector2D::set_from_angle(double angle)
+{
+    x = std::cos(angle);
+    y = std::sin(angle);
+}
+
 inline int Vector2D::min_axis(void) const { return x < y ? 0 : 1; }
 
 inline int Vector2D::max_axis(void) const { return x < y ? 1 : 0; }

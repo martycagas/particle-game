@@ -40,6 +40,7 @@
 
 #pragma once
 
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include <cstdlib>
 
@@ -185,6 +186,20 @@ struct Vector2D
      * @brief   The "greater or equal than" operator.
      */
     inline bool operator>=(const Vector2D &rvalue) const;
+
+    /**
+     * @brief   Sets both vector components to the specified value.
+     *
+     * @param   new_x_y         The new value for components.
+     */
+    inline void set_all(double new_x_y);
+
+    /**
+     * @brief   Sets both components to form a new unit vector with the given angle.
+     *
+     * @param   angle           Angle in radians.
+     */
+    void set_from_angle(double angle);
 
     /**
      * @brief   Returns the axis with the lower value.
