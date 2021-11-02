@@ -78,7 +78,7 @@ public:
      *
      * @param   forces          The list of forces to integrate.
      */
-    void integrate_forces(std::vector<Vector2D> forces);
+    void integrate_forces(std::vector<essentials::Vector2D> forces);
 
     /**
      * @brief   Updates the PhysicsObject's position using its current velocity.
