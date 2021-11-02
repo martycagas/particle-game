@@ -31,7 +31,7 @@
 /**
  * @brief   Class representing a particle in the game world.
  */
-class Particle : PhysicsObject
+class Particle : public PhysicsObject
 {
 public:
     /**
