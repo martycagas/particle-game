@@ -7,7 +7,7 @@
  * @section DESCRIPTION
  *
  * A class representing a two-dimensional, mathematical vector with all the features that are
- * required for a game, such as adding, multiplyingand normalising vectors.
+ * required for a game, such as adding, multiplying and normalising vectors.
  *
  * @section ATTRIBUTION
  *
