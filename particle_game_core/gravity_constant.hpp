@@ -14,6 +14,8 @@
 #pragma once
 
 // Standard includes
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include <cstdlib>
 
 // "Game essentials" library includes
@@ -27,18 +29,38 @@ class GravityConstant : public GravityObject
 public:
     /**
      * @brief   Contructor.
+     *
+     * @note    Initialises the angle to 270 degrees - i.e. straight down.
      */
     GravityConstant();
 
     /**
      * @brief   gravity_angle_ setter.
+     *
+     * @param   New angle in radians.
      */
     void set_gravity_angle(double new_gravity_angle);
 
     /**
+     * @brief   Alternate gravity_angle_ setter.
+     *
+     * @param   New angle in degrees.
+     */
+    void set_gravity_angle_from_deg(double new_gravity_deg_angle);
+
+    /**
      * @brief   gravity_angle_ getter.
+     *
+     * @return  Gravity angle in radians.
      */
     double get_gravity_angle(void) const;
+
+    /**
+     * @brief   Alternate gravity_angle_ getter.
+     *
+     * @return  Gravity angle in degrees.
+     */
+    double get_gravity_angle_as_deg(void) const;
 
     /**
      * @brief   gravity_strength_ setter.
@@ -67,4 +89,23 @@ public:
 protected:
     double gravity_angle_;     ///< Direction of the gravity in radians. 0 means to the right.
     double gravity_strength_;  ///< Strength of the gravitational force.
+
+private:
+    /**
+     * @brief   Converts angle from radians to degrees.
+     *
+     * @param   Input angle in radians.
+     *
+     * @return  Output angle in degrees.
+     */
+    static inline double rad_to_deg(double radians);
+
+    /**
+     * @brief   Converts angle from degrees to radians.
+     *
+     * @param   Input angle in degrees.
+     *
+     * @return  Output angle in radians.
+     */
+    static inline double deg_to_rad(double degrees);
 };
