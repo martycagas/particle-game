@@ -13,6 +13,8 @@
 
 #include "gravity_constant.hpp"
 
+using namespace essentials;
+
 GravityConstant::GravityConstant() : GravityObject() {}
 
 void GravityConstant::set_gravity_angle(double new_gravity_angle)

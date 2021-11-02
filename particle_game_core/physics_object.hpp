@@ -41,27 +41,27 @@ public:
      * @param   initial_position    Initial position in the 2D space.
      * @param   initial_mass        Initial mass of the object.
      */
-    PhysicsObject(Point2D initial_position, double initial_mass);
+    PhysicsObject(essentials::Point2D initial_position, double initial_mass);
 
     /**
      * @brief   position_ setter.
      */
-    void set_position(Point2D new_position);
+    void set_position(essentials::Point2D new_position);
 
     /**
      * @brief   position_ getter.
      */
-    Point2D get_position(void) const;
+    essentials::Point2D get_position(void) const;
 
     /**
      * @brief   velocity_ setter.
      */
-    void set_velocity(Point2D new_velocity);
+    void set_velocity(essentials::Point2D new_velocity);
 
     /**
      * @brief   velocity_ getter.
      */
-    Point2D get_velocity(void) const;
+    essentials::Point2D get_velocity(void) const;
 
     /**
      * @brief   mass_ setter.
@@ -81,7 +81,7 @@ public:
     void integrate_forces(std::vector<Vector2D> forces);
 
 protected:
-    Point2D position_;   ///< Position in the game world's 2D space.
-    Vector2D velocity_;  ///< Velocity in the game world's 2D space.
-    double mass_;        ///< Mass for the gravitational force calculation.
+    essentials::Point2D position_;   ///< Position in the game world's 2D space.
+    essentials::Vector2D velocity_;  ///< Velocity in the game world's 2D space.
+    double mass_;                    ///< Mass for the gravitational force calculation.
 };

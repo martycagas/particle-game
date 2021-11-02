@@ -16,6 +16,8 @@
 
 #include "physics_object.hpp"
 
+using namespace essentials;
+
 PhysicsObject::PhysicsObject(void) : position_(0, 0), velocity_(0, 0), mass_(0) {}
 
 PhysicsObject::PhysicsObject(Point2D initial_position, double initial_mass)

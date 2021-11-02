@@ -15,6 +15,8 @@
 
 #include "particle.hpp"
 
+using namespace essentials;
+
 Particle::Particle(void) : PhysicsObject() {}
 
 void Particle::setup(Point2D new_position, Vector2D new_velocity)

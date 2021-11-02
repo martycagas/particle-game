@@ -56,7 +56,7 @@ public:
      *
      * @return  Vector2D representing the gravitational force.
      */
-    virtual Vector2D calculate_force(const PhysicsObject &to_object) const;
+    virtual essentials::Vector2D calculate_force(const PhysicsObject &to_object) const;
 
 protected:
     bool is_enabled_;  ///< Flag defining whether the gravity object is active.

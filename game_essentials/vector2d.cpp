@@ -39,6 +39,8 @@
 
 #include "vector2d.hpp"
 
+using namespace essentials;
+
 Vector2D::Vector2D(void) : x(0), y(0) {}
 
 Vector2D::Vector2D(double new_x, double new_y) : x(new_x), y(new_y) {}

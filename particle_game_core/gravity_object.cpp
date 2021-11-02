@@ -12,6 +12,8 @@
 
 #include "gravity_object.hpp"
 
+using namespace essentials;
+
 GravityObject::GravityObject() : PhysicsObject(), is_enabled_(true) {}
 
 void GravityObject::enable(void) { is_enabled_ = true; }

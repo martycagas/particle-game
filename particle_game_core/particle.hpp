@@ -46,7 +46,7 @@ public:
     /**
      * @brief   Sets a new state to the particle.
      */
-    void setup(Point2D new_position, Vector2D new_velocity);
+    void setup(essentials::Point2D new_position, essentials::Vector2D new_velocity);
 
     /**
      * @brief   Draws the particle on screen.
