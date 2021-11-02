@@ -80,6 +80,11 @@ public:
      */
     void integrate_forces(std::vector<Vector2D> forces);
 
+    /**
+     * @brief   Updates the PhysicsObject's position using its current velocity.
+     */
+    void update(void);
+
 protected:
     essentials::Point2D position_;   ///< Position in the game world's 2D space.
     essentials::Vector2D velocity_;  ///< Velocity in the game world's 2D space.

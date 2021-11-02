@@ -43,3 +43,5 @@ void PhysicsObject::integrate_forces(std::vector<Vector2D> forces)
         velocity_ += force;
     }
 }
+
+void PhysicsObject::update(void) { position_ += velocity_; }
