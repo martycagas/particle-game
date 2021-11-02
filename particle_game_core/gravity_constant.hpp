@@ -65,6 +65,6 @@ public:
     essentials::Vector2D calculate_force(const PhysicsObject &to_object) const;
 
 protected:
-    double gravity_angle_;     ///< Direction of the gravity in radians. 0 means straight down.
+    double gravity_angle_;     ///< Direction of the gravity in radians. 0 means to the right.
     double gravity_strength_;  ///< Strength of the gravitational force.
 };
