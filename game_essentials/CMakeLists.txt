@@ -8,6 +8,7 @@ cmake_minimum_required(VERSION 3.8)
 
 # Manually specify all.cpp sources in this directory
 set(SOURCES_LIST
+    angle.cpp
     vector2d.cpp
 )
 
