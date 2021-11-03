@@ -2,12 +2,7 @@
  * @file    gravity_object.hpp
  * @author  Martin Cagas
  *
- * @brief   Class representing a "source" of gravity in the game world.
- *
- * @section DESCRIPTION
- *
- * A part of a particle simulation game, this class derives PhysicsObject and provides a method for
- * physics calculation.
+ * @brief   Class capable of computing its own gravitational pull on other objects.
  */
 
 #pragma once
@@ -21,6 +16,28 @@
 // Local includes
 #include "physics_object.hpp"
 
+/**
+ * @class   GravityObject
+ *
+ * @brief   Class capable of computing its own gravitational pull on other objects.
+ *
+ * @section DESCRIPTION
+ *
+ * A part of a particle simulation game, this class derives PhysicsObject and provides a method for
+ * gravitational force calculation exerted on other objects.
+ *
+ * @section USAGE
+ *
+ * @code
+ *
+ * GravityObject gravity_object();
+ *
+ * gravity_object.set_position(Vector2D(10.0, 20.0));
+ * gravity_object.set_mass(10.0);
+ * gravity_object.enable();
+ *
+ * @endcode
+ */
 class GravityObject : public PhysicsObject
 {
 public:
@@ -46,6 +63,8 @@ public:
 
     /**
      * @brief   Calculates the gravitational force exerted on another object.
+     *
+     * @details
      *
      * The computation itself is very simplified. In real world, there is an observed relation
      * between mass and gravitational force that is described by the gravitational constant. In this

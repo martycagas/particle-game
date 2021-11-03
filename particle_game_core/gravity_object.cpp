@@ -2,12 +2,7 @@
  * @file    gravity_object.cpp
  * @author  Martin Cagas
  *
- * @brief   Class representing a "source" of gravity in the game world.
- *
- * @section DESCRIPTION
- *
- * A part of a particle simulation game, this class derives PhysicsObject and provides a method for
- * physics calculation.
+ * @brief   Class capable of computing its own gravitational pull on other objects.
  */
 
 #include "gravity_object.hpp"

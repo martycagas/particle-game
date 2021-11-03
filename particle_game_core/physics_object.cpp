@@ -1,17 +1,8 @@
 /**
- * @file    physics_object.hpp
+ * @file    physics_object.cpp
  * @author  Martin Cagas
  *
- * @brief   Base class for representing any physics object in the game world.
- *
- * @section DESCRIPTION
- *
- * A part of a particle simulation game, this base class represents a physics object.
- *
- * Base class for a physics object. Has following properties:
- * - Position, its getter and setter
- * - Velocity, its getter and setter
- * - Mass, its getter and setter
+ * @brief   Base class for any physics-enabled object.
  */
 
 #include "physics_object.hpp"

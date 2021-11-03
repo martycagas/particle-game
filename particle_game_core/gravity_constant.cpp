@@ -1,14 +1,8 @@
 /**
- * @file    gravity_constant.hpp
+ * @file    gravity_constant.cpp
  * @author  Martin Cagas
  *
- * @brief   Class representing a constant gravitational force in the game world.
- *
- * @section DESCRIPTION
- *
- * A part of a particle simulation game, this class derives GravityObject. The gravitational force
- * caluculation method is overriden with a method returning a constant vector (i.e. this
- * GravityObject exerts the exact same force on all other objects).
+ * @brief   Class exerting the same gravitational pull on all objects.
  */
 
 #include "gravity_constant.hpp"

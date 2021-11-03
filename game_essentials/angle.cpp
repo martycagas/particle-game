@@ -1,13 +1,8 @@
 /**
- * @file    angle.hpp
+ * @file    angle.cpp
  * @author  Martin Cagas
  *
- * An angle with conversion functions.
- *
- * @section DESCRIPTION
- *
- * A class both capable of representing an angle and providing conversion methods between radians
- * and degrees.
+ * @brief   An angle with conversion functions.
  */
 
 #include "angle.hpp"

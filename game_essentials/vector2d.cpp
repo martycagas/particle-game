@@ -2,12 +2,7 @@
  * @file    vector2d.cpp
  * @author  Martin Cagas
  *
- * An mathematical 2D vector.
- *
- * @section DESCRIPTION
- *
- * A class representing a two-dimensional, mathematical vector with all the features that are
- * required for a game, such as adding, multiplyingand normalising vectors.
+ * @brief   Mathematical 2D vector.
  *
  * @section ATTRIBUTION
  *

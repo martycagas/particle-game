@@ -2,16 +2,7 @@
  * @file    physics_object.hpp
  * @author  Martin Cagas
  *
- * @brief   Base class for representing any physics object in the game world.
- *
- * @section DESCRIPTION
- *
- * A part of a particle simulation game, this base class represents a physics object.
- *
- * Base class for a physics object. Has following properties:
- * - Position, its getter and setter
- * - Velocity, its getter and setter
- * - Mass, its getter and setter
+ * @brief   Base class for any physics-enabled object.
  */
 
 #pragma once
@@ -23,6 +14,27 @@
 // "Game essentials" library includes
 #include <vector2d.hpp>
 
+/**
+ * @class   PhysicsObject
+ *
+ * @brief   Base class for any physics-enabled object.
+ *
+ * @section DESCRIPTION
+ *
+ * Has following properties:
+ * - position
+ * - velocity
+ * - mass
+ *
+ * Has following methods:
+ * - integrate_forces()
+ * - update()
+ *
+ * @section USAGE
+ *
+ * This class isn't intended to be used directly, instead it serves as a base class for other
+ * objects in the game world.
+ */
 class PhysicsObject
 {
 public:

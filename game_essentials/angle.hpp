@@ -2,12 +2,7 @@
  * @file    angle.hpp
  * @author  Martin Cagas
  *
- * An angle with conversion functions.
- *
- * @section DESCRIPTION
- *
- * A class both capable of representing an angle and providing conversion methods between radians
- * and degrees.
+ * @brief   Angle with conversion functions.
  */
 
 #pragma once
@@ -21,12 +16,12 @@ namespace essentials
     /**
      * @class   Angle
      *
-     * @brief   A class both capable of representing an angle and providing conversion methods
-     * between radians and degrees.
+     * @brief   Angle with conversion functions.
      *
-     * @details
+     * @section DESCRIPTION
      *
-     * An angle with conversion functions.
+     * A class both capable of representing an angle and providing conversion methods between
+     * radians and degrees.
      *
      * @section USAGE
      *

@@ -2,12 +2,7 @@
  * @file    vector2d.hpp
  * @author  Martin Cagas
  *
- * An mathematical 2D vector.
- *
- * @section DESCRIPTION
- *
- * A class representing a two-dimensional, mathematical vector with all the features that are
- * required for a game, such as adding, multiplying and normalising vectors.
+ * @brief   Mathematical 2D vector.
  *
  * @section ATTRIBUTION
  *
@@ -48,9 +43,9 @@ namespace essentials
     /**
      * @class   Vector2D
      *
-     * @brief   A two-dimensional vector.
+     * @brief   Mathematical 2D vector.
      *
-     * @details
+     * @section DESCRIPTION
      *
      * A class representing a two-dimensional, mathematical vector with all the features that are
      * required for a game, such as adding, multiplying and normalising vectors.

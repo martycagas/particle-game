@@ -3,14 +3,6 @@
  * @author  Martin Cagas
  *
  * @brief   Class representing the contents of the game world.
- *
- * @section DESCRIPTION
- *
- * A part of a particle simulation game, this class represents the game world.
- *
- * A game world has following functions:
- * - Keep the constraints and state of the simulation world.
- * - Keep track of objects in the world.
  */
 
 #pragma once
@@ -19,7 +11,21 @@
 #include <vector>
 
 /**
+ * @class   World
+ *
  * @brief   Class representing the contents of the game world.
+ *
+ * @section DESCRIPTION
+ *
+ * A game world has following functions:
+ * - Keep the constraints and state of the simulation world.
+ * - Keep track of objects in the world.
+ *
+ * @section USAGE
+ *
+ * @code
+ *
+ * @endcode
  */
 class World
 {
