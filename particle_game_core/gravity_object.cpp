@@ -9,7 +9,7 @@
 
 using namespace essentials;
 
-GravityObject::GravityObject() : PhysicsObject(), is_enabled_(true) {}
+GravityObject::GravityObject() : PhysicsObject(), is_enabled_(false) {}
 
 void GravityObject::enable(void) { is_enabled_ = true; }
 
