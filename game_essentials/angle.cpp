@@ -20,11 +20,11 @@ Angle::Angle(double degrees) : radians_(deg_to_rad(degrees)) {}
 
 void Angle::set_from_radians(double radians) { radians_ = radians; }
 
-double Angle::get_as_radians(void) { return radians_; }
+double Angle::get_as_radians(void) const { return radians_; }
 
 void Angle::set_from_degrees(double degrees) { radians_ = deg_to_rad(degrees); }
 
-double Angle::get_as_degrees(void) { return rad_to_deg(radians_); }
+double Angle::get_as_degrees(void) const { return rad_to_deg(radians_); }
 
 inline double Angle::rad_to_deg(double radians) { return radians * (180.0 / M_PI); }
 

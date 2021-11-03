@@ -80,7 +80,7 @@ namespace essentials
          *
          * @return  The angle in radians.
          */
-        double get_as_radians(void);
+        double get_as_radians(void) const;
 
         /**
          * @brief   Sets the angle from degrees.
@@ -94,7 +94,7 @@ namespace essentials
          *
          * @return  The angle in degrees.
          */
-        double get_as_degrees(void);
+        double get_as_degrees(void) const;
 
         /**
          * @brief   Converts angle from radians to degrees.
