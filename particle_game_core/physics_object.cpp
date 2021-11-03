@@ -25,15 +25,15 @@ PhysicsObject::PhysicsObject(Point2D initial_position, double initial_mass)
 {
 }
 
-void PhysicsObject::set_position(Point2D new_position) { position_ = new_position; }
+void PhysicsObject::set_position(Point2D position) { position_ = position; }
 
 Point2D PhysicsObject::get_position(void) const { return position_; }
 
-void PhysicsObject::set_velocity(Point2D new_velocity) { velocity_ = new_velocity; }
+void PhysicsObject::set_velocity(Point2D velocity) { velocity_ = velocity; }
 
 Point2D PhysicsObject::get_velocity(void) const { return velocity_; }
 
-void PhysicsObject::set_mass(double new_mass) { mass_ = new_mass; }
+void PhysicsObject::set_mass(double mass) { mass_ = mass; }
 
 double PhysicsObject::get_mass(void) const { return mass_; }
 

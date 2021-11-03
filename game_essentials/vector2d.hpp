@@ -78,10 +78,10 @@ namespace essentials
         /**
          * @brief   Arbitrary components constructor.
          *
-         * @param   new_x       Value to which to initialise the X axis.
-         * @param   new_y       Value to which to initialise the Y axis.
+         * @param   x           Value to which to initialise the X axis.
+         * @param   y           Value to which to initialise the Y axis.
          */
-        Vector2D(double new_x, double new_y);
+        Vector2D(double x, double y);
 
         /**
          * @brief   The subscript operator.
@@ -191,9 +191,9 @@ namespace essentials
         /**
          * @brief   Sets both vector components to the specified value.
          *
-         * @param   new_x_y         The new value for components.
+         * @param   xy              The new value for components.
          */
-        inline void set_all(double new_x_y);
+        inline void set_all(double xy);
 
         /**
          * @brief   Sets both components to form a new unit vector with the given angle.

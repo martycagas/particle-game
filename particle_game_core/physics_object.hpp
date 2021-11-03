@@ -46,7 +46,7 @@ public:
     /**
      * @brief   position_ setter.
      */
-    void set_position(essentials::Point2D new_position);
+    void set_position(essentials::Point2D position);
 
     /**
      * @brief   position_ getter.
@@ -56,7 +56,7 @@ public:
     /**
      * @brief   velocity_ setter.
      */
-    void set_velocity(essentials::Point2D new_velocity);
+    void set_velocity(essentials::Point2D velocity);
 
     /**
      * @brief   velocity_ getter.
@@ -66,7 +66,7 @@ public:
     /**
      * @brief   mass_ setter.
      */
-    void set_mass(double new_mass);
+    void set_mass(double mass);
 
     /**
      * @brief   mass_ getter.

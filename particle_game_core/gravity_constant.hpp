@@ -39,14 +39,14 @@ public:
      *
      * @param   New angle in radians.
      */
-    void set_gravity_angle(double new_gravity_angle);
+    void set_gravity_angle(double gravity_angle);
 
     /**
      * @brief   Alternate gravity_angle_ setter.
      *
      * @param   New angle in degrees.
      */
-    void set_gravity_angle_from_deg(double new_gravity_deg_angle);
+    void set_gravity_angle_from_deg(double gravity_deg_angle);
 
     /**
      * @brief   gravity_angle_ getter.
@@ -65,7 +65,7 @@ public:
     /**
      * @brief   gravity_strength_ setter.
      */
-    void set_gravity_strength(double new_gravity_strength);
+    void set_gravity_strength(double gravity_strength);
 
     /**
      * @brief   gravity_strength_ getter.

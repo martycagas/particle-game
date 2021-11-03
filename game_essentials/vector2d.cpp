@@ -43,7 +43,7 @@ using namespace essentials;
 
 Vector2D::Vector2D(void) : x(0), y(0) {}
 
-Vector2D::Vector2D(double new_x, double new_y) : x(new_x), y(new_y) {}
+Vector2D::Vector2D(double x, double y) : x(x), y(y) {}
 
 inline double &Vector2D::operator[](int index) { return (index == 0) ? x : y; }
 
@@ -147,7 +147,7 @@ inline bool Vector2D::operator>=(const Vector2D &rvalue) const
     return x == rvalue.x ? (y >= rvalue.y) : (x > rvalue.x);
 }
 
-inline void Vector2D::set_all(double new_x_y) { x = y = new_x_y; }
+inline void Vector2D::set_all(double xy) { x = y = xy; }
 
 void Vector2D::set_from_angle(double angle)
 {

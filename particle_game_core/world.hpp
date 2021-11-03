@@ -32,7 +32,7 @@ public:
     /**
      * @brief   particle_limit_ setter.
      */
-    void set_particle_limit(std::size_t new_particle_limit);
+    void set_particle_limit(std::size_t particle_limit);
 
     /**
      * @brief   particle_limit getter.
