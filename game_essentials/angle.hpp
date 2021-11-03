@@ -19,10 +19,10 @@
 namespace essentials
 {
     /**
-     * @class Angle
+     * @class   Angle
      *
-     * @brief A class both capable of representing an angle and providing conversion methods between
-     * radians and degrees.
+     * @brief   A class both capable of representing an angle and providing conversion methods
+     * between radians and degrees.
      *
      * @details
      *

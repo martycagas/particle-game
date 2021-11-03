@@ -45,12 +45,40 @@
 
 namespace essentials
 {
+    /**
+     * @class   Vector2D
+     *
+     * @brief   A two-dimensional vector.
+     *
+     * @details
+     *
+     * A class representing a two-dimensional, mathematical vector with all the features that are
+     * required for a game, such as adding, multiplying and normalising vectors.
+     *
+     * @section USAGE
+     *
+     * @code
+     *
+     * Vector2D v1(1, 2);
+     *
+     * Vector2D v2(3, 4);
+     *
+     * Vector2D v3 = v1 + v2;
+     *
+     * Vector2D v4 = v1 * v2;
+     *
+     * Vector2D v5 = v1 * 2;
+     *
+     * Vector2D v6 = 2 * v1;
+     *
+     * Vector2D v7 = v1.normalized();
+     *
+     * @endcode
+     */
     struct Vector2D
     {
         /**
          * @brief   A set of anonymous unions and structures that hold the vector data.
-         *
-         * Initialised to [0; 0].
          */
         union
         {
@@ -71,12 +99,16 @@ namespace essentials
         };
 
         /**
-         * @brief   Empty contructor. Creates a [0; 0] vector.
+         * @brief   Empty contructor.
+         *
+         * @details
+         *
+         * Creates a [0; 0] vector.
          */
         Vector2D(void);
 
         /**
-         * @brief   Arbitrary components constructor.
+         * @brief   Parametrised constructor.
          *
          * @param   x           Value to which to initialise the X axis.
          * @param   y           Value to which to initialise the Y axis.
