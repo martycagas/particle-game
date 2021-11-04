@@ -46,6 +46,21 @@ public:
     PhysicsObject(void);
 
     /**
+     * @brief   Position-only constructor.
+     *
+     * @details
+     *
+     * Initializes the position to the parameter and the velocity and mass to zero.
+     *
+     * Generally used when creating emitters.
+     *
+     * @see     Emitter::Emitter()
+     *
+     * @param   position    Initial position.
+     */
+    PhysicsObject(essentials::Vector2D position);
+
+    /**
      * @brief   Contructor.
      *
      * Used in general for gravity sources, emitters and other more permanent objects.
