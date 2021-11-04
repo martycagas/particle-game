@@ -44,7 +44,7 @@ public:
     /**
      * @brief   Contructor.
      */
-    GravityObject();
+    GravityObject(essentials::Point2D position);
 
     /**
      * @brief   Enables the gravity object by setting is_enabled_ to true.

@@ -9,7 +9,10 @@
 
 using namespace essentials;
 
-GravityConstant::GravityConstant() : GravityObject(), gravity_angle_(270.0), gravity_strength_(10.0) {}
+GravityConstant::GravityConstant(void)
+    : GravityObject(Vector2D(0.0, 0.0)), gravity_angle_(270.0), gravity_strength_(10.0)
+{
+}
 
 void GravityConstant::set_gravity_angle_from_rad(double gravity_rad_angle)
 {

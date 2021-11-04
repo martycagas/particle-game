@@ -48,7 +48,7 @@ public:
      *
      * Initialises the strength to 10.0.
      */
-    GravityConstant();
+    GravityConstant(void);
 
     /**
      * @brief   gravity_angle_ setter.
