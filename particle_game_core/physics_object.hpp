@@ -41,7 +41,13 @@ public:
     /**
      * @brief   Empty (zero) contructor.
      *
-     * Used in general for particles.
+     * @details
+     *
+     * Initializes the position, velocity and mass to zero.
+     *
+     * Generally used when creating particles.
+     *
+     * @see    Particle::Particle()
      */
     PhysicsObject(void);
 
@@ -63,10 +69,16 @@ public:
     /**
      * @brief   Contructor.
      *
-     * Used in general for gravity sources, emitters and other more permanent objects.
+     * @details
      *
-     * @param   initial_position    Initial position in the 2D space.
-     * @param   initial_mass        Initial mass of the object.
+     * Initializes the position and velocity to the parameters and the mass to zero.
+     *
+     * Generally used when creating gravity sources.
+     *
+     * @see     GravitySource::GravitySource()
+     *
+     * @param   position    Initial position.
+     * @param   mass        Initial mass.
      */
     PhysicsObject(essentials::Point2D initial_position, double initial_mass);
 
