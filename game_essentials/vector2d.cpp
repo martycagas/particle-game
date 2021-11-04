@@ -36,7 +36,7 @@
 
 using namespace essentials;
 
-Vector2D::Vector2D(void) : x(0), y(0) {}
+Vector2D::Vector2D(void) : x(0.0), y(0.0) {}
 
 Vector2D::Vector2D(double x, double y) : x(x), y(y) {}
 
