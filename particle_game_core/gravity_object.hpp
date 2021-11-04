@@ -78,5 +78,5 @@ public:
     virtual essentials::Vector2D calculate_force(const PhysicsObject &to_object) const;
 
 protected:
-    bool is_enabled_;  ///< Flag defining whether the gravity object is active.
+    bool is_enabled_;  ///< True if the gravity object is enabled, false otherwise.
 };
